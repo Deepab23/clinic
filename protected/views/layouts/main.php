@@ -96,6 +96,28 @@ Purchase: http://wrapbootstrap.com
         </a>
         <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
       </div>
+	  
+	  <ul class="nav navbar-nav navbar-right">
+			
+        <li class="dropdown menu-merge">
+          <a data-toggle="dropdown" class="dropdown-toggle fw600 p15" href="#" aria-expanded="false">
+          	<img class="mw30 br64" alt="avatar" src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/img/avatars/5.jpg">
+          	<span class="hidden-xs pl15"> Michael .R </span>
+            <span class="caret caret-tp hidden-xs"></span>
+          </a>
+          <ul role="menu" class="dropdown-menu list-group dropdown-persist w250">
+        
+            <li class="list-group-item">
+              <a class="animated animated-short fadeInUp" href="#">
+                <span class="fa fa-gear"></span> Settings </a>
+            </li>
+            <li class="dropdown-footer">
+              <a class="" href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout">
+              <span class="fa fa-power-off pr5"></span> Logout </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     
       </header>
    
@@ -137,14 +159,11 @@ Purchase: http://wrapbootstrap.com
 
         <!-- Start: Sidebar Menu -->
         <ul class="nav sidebar-menu">
-          <li class="sidebar-label pt20">Menu</li>
-		  
-		  	
-
- 	
-
+ 
   	
-  
+   <?php
+		  if($_SESSION['user']['Role']!=3){
+		  ?>
           <li>
             <a href="<?php echo Yii::app()->request->baseUrl; ?>/users">
               <span class="fa fa-users"></span>
@@ -153,6 +172,10 @@ Purchase: http://wrapbootstrap.com
              
             </a>
           </li>
+		  <?php
+		  }
+		  ?>
+		  
           <li>
             <a href="http://admindesigns.com/demos/absolute/README/index.html">
               <span class="fa fa-users"></span>
@@ -181,17 +204,23 @@ Purchase: http://wrapbootstrap.com
             </a>
           </li>
 		  
-		  
-		     <li>
-            <a href="dashboard.html">
+		  <?php
+		  if($_SESSION['user']['Role']==1){
+		  ?>
+		    <li>
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/location">
               <span class="glyphicon glyphicon-home"></span>
               <span class="sidebar-title">Location</span>
             </a>
           </li>
 		  
+		  <?php
+		  }
+		  ?>
+		  
 		  
 		      <li>
-            <a href="dashboard.html">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout">
               <span class="fa fa-sign-out"></span>
               <span class="sidebar-title">Sign Out</span>
             </a>
@@ -224,7 +253,13 @@ Purchase: http://wrapbootstrap.com
 
   <!-- BEGIN: PAGE SCRIPTS -->
 
+ <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery-1.11.1.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
+  <!-- Theme Javascript -->
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/utility/utility.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/demo/demo.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/main.js"></script>
   <!-- END: PAGE SCRIPTS -->
 
 </body>

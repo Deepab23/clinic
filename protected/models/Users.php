@@ -9,9 +9,14 @@
  * @property string $LastName
  * @property string $Email
  * @property string $Pasword
- * @property integer $Admin
- * @property string $Xkey
- * @property integer $Staus
+ * @property string $EB
+ * @property string $EC
+ * @property string $EE
+ * @property string $DOH
+ * @property integer $Office
+ * @property integer $Role
+ * @property string $About
+ * @property string $Createdon
  */
 class Users extends CActiveRecord
 {
@@ -23,6 +28,24 @@ class Users extends CActiveRecord
 		return 'users';
 	}
 
+	
+	
+	public function defaultScope()
+{
+    $alias = $this->getTableAlias(false,false);
+	if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']!=1){
+		 
+		$of=$_SESSION['user']['Office'];
+		 return array(
+        'condition'=>"`$alias`.`Office` = $of and `$alias`.`Role`=3",
+    );
+	
+	}
+	}
+    
+}
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -31,12 +54,16 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FirstName, LastName, Email, Pasword', 'required'),
-			array('FirstName, LastName, Email, Pasword', 'length', 'max'=>255),
-		
+			array('FirstName, LastName, Email, Pasword, DOH, Office, Role', 'required'),
+			array('Office, Role', 'numerical', 'integerOnly'=>true),
+			array('FirstName, LastName, Email, Pasword, EB, DOH', 'length', 'max'=>255),
+			array('EC, EE', 'length', 'max'=>60),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, FirstName, LastName, Email, Pasword', 'safe', 'on'=>'search'),
+			array('id, FirstName, LastName, Email, Pasword, EB, EC, EE, DOH, Office, Role, About, Createdon', 'safe', 'on'=>'search'),
+			 array('Createdon','default',
+              'value'=>new CDbExpression('NOW()'),
+              'setOnEmpty'=>false,'on'=>'insert')
 		);
 	}
 
@@ -62,7 +89,17 @@ class Users extends CActiveRecord
 			'LastName' => 'Last Name',
 			'Email' => 'Email',
 			'Pasword' => 'Password',
-	
+			'EB' => 'Bachelor of Kinesiology',
+			'EC' => 'Certified	
+  Exercise	
+  Physiologist',
+			'EE' => 'Exercise	
+  Specialist',
+			'DOH' => 'Date of Hiring',
+			'Office' => 'Office',
+			'Role' => 'Role',
+			'About' => 'About',
+			'Createdon' => 'Createdon',
 		);
 	}
 
@@ -89,19 +126,19 @@ class Users extends CActiveRecord
 		$criteria->compare('LastName',$this->LastName,true);
 		$criteria->compare('Email',$this->Email,true);
 		$criteria->compare('Pasword',$this->Pasword,true);
-		
+		$criteria->compare('EB',$this->EB,true);
+		$criteria->compare('EC',$this->EC,true);
+		$criteria->compare('EE',$this->EE,true);
+		$criteria->compare('DOH',$this->DOH,true);
+		$criteria->compare('Office',$this->Office);
+		$criteria->compare('Role',$this->Role);
+		$criteria->compare('About',$this->About,true);
+		$criteria->compare('Createdon',$this->Createdon,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
-	
-		public function beforeSave() {
-    if ($this->isNewRecord)
-        $this->Pasword =md5($this->Pasword);
-     return parent::beforeSave();
-}
-
 
 	/**
 	 * Returns the static model of the specified AR class.

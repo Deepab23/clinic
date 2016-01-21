@@ -41,6 +41,10 @@ public function actionCreate()
 	
 	public function actionIndex()
 	{
+		
+		if(isset($_SESSION['user']['Role'])){
+			$this->redirect(array('site/dashboard'));
+		}
 			$model=new LoginForm;
 
 		// if it is ajax validation request

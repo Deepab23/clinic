@@ -37,7 +37,7 @@ class UsersController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -71,11 +71,16 @@ class UsersController extends Controller
 		{
 			$model->attributes=$_POST['Users'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
+		$criteria = new CDbCriteria;
+$criteria->order = 'name ASC';
+$locations = Location::model()->findAll($criteria);
+$data= CHtml::listData($locations, 'id', 'name');
+
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model,'locations'=>$data
 		));
 	}
 
@@ -95,12 +100,19 @@ class UsersController extends Controller
 		{
 			$model->attributes=$_POST['Users'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
+		
+				$criteria = new CDbCriteria;
+$criteria->order = 'name ASC';
+$locations = Location::model()->findAll($criteria);
+$data= CHtml::listData($locations, 'id', 'name');
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model'=>$model,'locations'=>$data
 		));
+
+	
 	}
 
 	/**

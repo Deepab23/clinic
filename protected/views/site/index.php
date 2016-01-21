@@ -2,8 +2,13 @@
  #sidebar_left{
 	 display:none;
  }
+div#main header.navbar.navbar-fixed-top{
+	 display:none;
+ }
  </style>
  <div class="admin-form theme-info mw500" id="login" style="margin-left: 17%;">
+ 
+
 
          
 

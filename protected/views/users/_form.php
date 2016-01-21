@@ -46,27 +46,98 @@
 		<?php echo $form->error($model,'Pasword'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'Education'); ?>
-		<?php echo $form->textField($model,'Education',array('size'=>60,'maxlength'=>255,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Education'); ?>
+	
+		<div class="form-group">
+		<label> Education <label>
+		</div>
+		
+	<div class="form-group label">
+	  <?php echo $form->checkBox($model,'EB'); ?>
+	<?php echo $form->labelEx($model,'EB'); ?>
+  
+    <?php echo $form->error($model,'EB'); ?>
+	
+	&nbsp;
+	&nbsp;
+	 <?php echo $form->checkBox($model,'EC'); ?>
+	<?php echo $form->labelEx($model,'EC'); ?>
+   
+    <?php echo $form->error($model,'EC'); ?>
+&nbsp;
+	&nbsp;
+ <?php echo $form->checkBox($model,'EE'); ?>
+	<?php echo $form->labelEx($model,'EE'); ?>
+   
+    <?php echo $form->error($model,'EE'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'DOH'); ?>
-		<?php echo $form->textField($model,'DOH',array('size'=>60,'maxlength'=>255,'class'=>'form-control')); ?>
+		<div>
+		
+		<?php 
+		$this->widget('zii.widgets.jui.CJuiDatePicker',array(
+    'name'=>'Users[DOH]',
+	'model'=>$model,
+    // additional javascript options for the date picker plugin
+    'options'=>array(
+        'showAnim'=>'fold',
+    ),
+    'htmlOptions'=>array(
+        'class'=>'form-control'
+    ),
+));
+
+?>
+</div>
 		<?php echo $form->error($model,'DOH'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'Office'); ?>
-		<?php echo $form->textField($model,'Office'); ?>
-		<?php echo $form->error($model,'Office'); ?>
-	</div>
+	
+	<div class="row">
+    <?php
+	echo $form->labelEx($model,'Office');
+     
+	?>
+	
+	<select id="Users_Office" name="Users[Office]" class="form-control">
+    <option value="">Select location</option>
+	<?php
+	if($_SESSION['user']['Role']==1){
+		
+		$loc=Location::model()->findAll();
+	}else{
+		$plc=$_SESSION['user']['Office'];
+		$Criteria = new CDbCriteria();
+        $Criteria->condition = "id=$plc";
+		$loc=Location::model()->findAll($Criteria);
+	}
+	
+	foreach($loc as $l){
+		
+		echo "<option value='$l->id'> $l->name </option> ";
+		
+	}
+	
+	?>
+
+</select>
+   
+    <?php echo $form->error($model,'Office'); ?>
+</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Role'); ?>
-		<?php echo $form->textField($model,'Role',array('class'=>'form-control')); ?>
+	<?php
+		if($_SESSION['user']['Role']==1){
+			$role=array('1'=>'Executive','2'=>'Floor	
+  Manager','3'=>'Therapist');
+		}else{
+				$role=array('3'=>'Therapist');
+			
+		}
+	?>
+		<?php echo $form->labelEx($model,'Role'); 
+		echo $form->dropDownList($model,'Role',$role,array('prompt'=>'Select role','class'=>'form-control'));?>
 		<?php echo $form->error($model,'Role'); ?>
 	</div>
 
@@ -88,3 +159,4 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+

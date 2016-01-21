@@ -32,7 +32,6 @@ $this->breadcrumbs=array(
 		'FirstName',
 		'LastName',
 		'Email',
-		'Education',
 		'DOH',
 		'Office',
 		'Role',

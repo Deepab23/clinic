@@ -21,10 +21,10 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
 	
-   $this->password=md5($this->password);
+   $this->password=$this->password;
     // Create an instance from model User and search
     $users = Users::model()->findByAttributes(array('Email'=>$this->username));
-
+  //print_r($users);die;
     //Swap original if(!isset($users[$this->username]))
     if(!isset($users->Email))
         $this->errorCode=self::ERROR_USERNAME_INVALID;

@@ -24918,3 +24918,12 @@ body.timeline-page .panel-clone {
 .formleft{
 	margin-left:5%;
 }
+.grid-view .button-column {
+  text-align: center;
+  width: 100px !important;
+}
+
+.label label{
+	font-weight:normal;
+	color:#000;
+}
