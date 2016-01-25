@@ -4,7 +4,6 @@ $U=$_SESSION['user'];
 $FN=$U['FirstName'];
 $LN=$U['LastName'];
 $EM=$U['Email'];
-$isAdmin=$U['Admin'];
 ?>
 <!DOCTYPE html>
 <!--
@@ -102,14 +101,17 @@ Purchase: http://wrapbootstrap.com
         <li class="dropdown menu-merge">
           <a data-toggle="dropdown" class="dropdown-toggle fw600 p15" href="#" aria-expanded="false">
           	<img class="mw30 br64" alt="avatar" src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/img/avatars/5.jpg">
-          	<span class="hidden-xs pl15"> Michael .R </span>
+          	<span class="hidden-xs pl15"> <?php echo $FN." ".$LN  ?></span>
             <span class="caret caret-tp hidden-xs"></span>
           </a>
           <ul role="menu" class="dropdown-menu list-group dropdown-persist w250">
         
             <li class="list-group-item">
-              <a class="animated animated-short fadeInUp" href="#">
+              <a class="animated animated-short fadeInUp" data-toggle="modal" data-target="#myModal3">
                 <span class="fa fa-gear"></span> Settings </a>
+				
+				      <a class="animated animated-short fadeInUp" data-toggle="modal" data-target="#myModal2">
+                <span class="fa fa-lock"></span> Change Password </a>
             </li>
             <li class="dropdown-footer">
               <a class="" href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout">
@@ -138,7 +140,7 @@ Purchase: http://wrapbootstrap.com
               </a>
               <div class="media-body">
 
-                <div class="media-author">Michael Richards</div>
+                <div class="media-author"><?php echo $FN." ".$LN  ?></div>
               </div>
             </div>
           </div>
@@ -177,7 +179,7 @@ Purchase: http://wrapbootstrap.com
 		  ?>
 		  
           <li>
-            <a href="http://admindesigns.com/demos/absolute/README/index.html">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/clients">
               <span class="fa fa-users"></span>
               <span class="sidebar-title"> Client</span>
             </a>
@@ -249,6 +251,144 @@ Purchase: http://wrapbootstrap.com
 
 
   </div>
+  
+  
+  	  <div id="myModal" style="display:none;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Email" required="">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	  <!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+        <h4 class="modal-title" id="myModalLabel">Change Password</h4>
+      </div>
+      <div class="modal-body">
+	  <div class="alert" style="display:none">
+                    <button data-dismiss="alert" class="close" type="button">x</button>
+                    <i class="fa fa-ok-sign"></i> <span id="messages"> </span>
+                  </div>
+        <div class="panel-body">
+                      <form class="bs-example form-horizontal" data-validate="parsley" id="formcpasspass">
+                        <div class="form-group">
+                          <label class="col-lg-4 control-label">Old Password</label>
+                          <div class="col-lg-8">
+                            <input type="password" placeholder="Old Password" class="form-control" data-required="true" name="opassword" id="opassword">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-lg-4 control-label">Password</label>
+                          <div class="col-lg-8">
+                            <input type="password" placeholder="Password" data-required="true" class="form-control" name="password" id="password">
+                          </div>
+                        </div>
+						 <div class="form-group">
+                          <label class="col-lg-4 control-label">Confirm Password</label>
+                          <div class="col-lg-8">
+                            <input type="password" placeholder="Confirm Password" data-required="true" data-equalto="#password" class="form-control" name="cpassword" id="cpassword">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="$('#formcpasspass').submit()">Update Password</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+  
+  
+  	  <!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+        <h4 class="modal-title" id="myModalLabel">Settings</h4>
+      </div>
+      <div class="modal-body">
+	  <div class="alert" style="display:none">
+                    <button data-dismiss="alert" class="close" type="button">x</button>
+                    <i class="fa fa-ok-sign"></i> <span id="messages"> </span>
+                  </div>
+        <div class="panel-body">
+                      <form class="bs-example form-horizontal" data-validate="parsley" id="updateuserinfo">
+                        <div class="form-group">
+                          <label class="col-lg-4 control-label">First Name</label>
+                          <div class="col-lg-8">
+                            <input type="text"  class="form-control" data-required="true" name="firstname" value="<?php echo $FN ?>">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-lg-4 control-label">Last Name</label>
+                          <div class="col-lg-8">
+                             <input type="text"  class="form-control" data-required="true" name="lastname" value="<?php echo $LN ?>">
+                          </div>
+                        </div>
+						
+						
+						   <div class="form-group">
+                          <label class="col-lg-4 control-label">Email</label>
+                          <div class="col-lg-8">
+                             <input type="text"  class="form-control" data-required="true"  data-email="true" name="email" value="<?php echo $EM ?>">
+                          </div>
+                        </div>
+						
+						
+						 <div class="form-group">
+                          <label class="col-lg-4 control-label">Education</label>
+                          <div class="col-lg-8">
+						  <div>
+                             <input type="checkbox" value="1" id="Users_EBe" name="Users[EB]">	<label for="Users_EB">Bachelor of&nbsp;Kinesiology</label>  
+							 
+							 </div>
+							 
+							 <div>
+							 
+							 <input type="checkbox" value="1" id="Users_ECe" name="Users[EC]">	<label for="Users_EC">Certified	
+ &nbsp;Exercise	
+ &nbsp;Physiologist</label>   
+    &nbsp;
+	&nbsp;
+	
+	</div>
+	
+	 <div>
+<input type="checkbox" value="1" id="Users_EEe" name="Users[EE]">	<label for="Users_EE">Exercise	
+ &nbsp;Specialist</label> 
+ </div>
+                          </div>
+                        </div>
+						
+                      </form>
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="$('#formcpasspass').submit()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+
+
   <!-- End: Main -->
 
   <!-- BEGIN: PAGE SCRIPTS -->
@@ -260,12 +400,84 @@ Purchase: http://wrapbootstrap.com
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/utility/utility.js"></script>
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/demo/demo.js"></script>
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/main.js"></script>
+   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/parsley/parsley.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/parsley/parsley.extend.js"></script>
+  <script src="http://bootboxjs.com/bootbox.js"></script>
   <!-- END: PAGE SCRIPTS -->
 
 </body>
 
 
+<script>
 
+
+
+$("#bootbox-options").on('click', function () {
+            bootbox.dialog({
+                message: $("#myModal").html(),
+                title: "Forget Password",
+                className: "modal-darkorange",
+                buttons: {
+                    success: {
+                        label: "OK",
+                        className: "btn-blue",
+                        callback: function () { }
+                    },
+                    "Cancel": {
+                        className: "btn-danger",
+                        callback: function () { }
+                    }
+                }
+            });
+        });
+
+		
+		
+		  $(function() { 
+  
+  $("#contentx").css({
+	  height:$(window).height()
+  })
+  
+    $('#formcpasspass').submit(function(e) { 
+        e.preventDefault();
+        if ( $(this).parsley().isValid() ) {
+          
+$.ajax({
+	url:"<?php echo Yii::app()->request->baseUrl; ?>/users/changepassword/id/<?php echo @$_SESSION['user']['Id'] ?>",
+	data:$(this).serialize(),
+	type:"post",
+	success:function(data){
+		//alert(data)
+		if(data==1){
+			$('#messages').text("Password changed successfully")
+			$('.alert').removeClass('alert-danger');
+			$('.alert').addClass('alert-success');
+			
+			$('.alert').show();
+			
+				setTimeout(function(){
+				window.location.reload();
+			},1500);
+		}else{
+			$('#messages').text("Please enter correct password")
+			$('.alert').removeClass('alert-success');
+			$('.alert').addClass('alert-danger');
+			$('.alert').show();
+			
+		}
+	}
+})			
+        }
+    });
+	
+
+
+}); 
+
+</script>
+
+</script>
 
 </html>
 

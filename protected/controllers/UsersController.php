@@ -11,39 +11,7 @@ class UsersController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
-	{
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-		);
-	}
-
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('@'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
+	
 
 	/**
 	 * Displays a particular model.
@@ -54,6 +22,18 @@ class UsersController extends Controller
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
+	}
+	
+	
+	public function actionGetTharepistByLoc()
+	{
+		$loc=$_POST['location'];
+		$Criteria = new CDbCriteria();
+        $Criteria->condition = "office=$loc and Role='3'";
+		$loc=Users::model()->findAll($Criteria);
+		foreach($loc as $l){
+			echo "<option value='$l->id'> $l->FirstName $l->LastName </option>";
+		}
 	}
 
 	/**
@@ -109,6 +89,37 @@ $locations = Location::model()->findAll($criteria);
 $data= CHtml::listData($locations, 'id', 'name');
 
 		$this->render('update',array(
+			'model'=>$model,'locations'=>$data
+		));
+
+	
+	}
+	
+	
+	
+	
+	public function actionEdit()
+	{
+		$id=Yii::app()->user->id;
+		
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Users']))
+		{
+			$model->attributes=$_POST['Users'];
+			if($model->save())
+				$this->redirect(array('site/dasboard'));
+		}
+		
+				$criteria = new CDbCriteria;
+$criteria->order = 'name ASC';
+$locations = Location::model()->findAll($criteria);
+$data= CHtml::listData($locations, 'id', 'name');
+
+		$this->render('edit',array(
 			'model'=>$model,'locations'=>$data
 		));
 
@@ -185,5 +196,27 @@ $data= CHtml::listData($locations, 'id', 'name');
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+	
+	
+			public function actionChangePassword($id){
+		
+		
+		$op=$_POST['opassword'];
+		$p=$_POST['password'];
+		$user=Users::model()->findByPk($id);
+		if($user->Pasword==$op){
+          	
+      $user->Pasword=$p;
+     if($user->save()){
+		 echo 1;
+	 }else{
+		 echo $user->getErrors();
+	 }  
+     				
+		}else{
+			echo  0;
+		}
+		die;
 	}
 }

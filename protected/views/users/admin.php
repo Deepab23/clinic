@@ -10,6 +10,26 @@ $this->breadcrumbs=array(
 
 
 
+function getRole($vid){
+	
+	if($vid==1){
+		return "Executive";
+	}else if($vid==2){
+		return "Floor	
+  Manager";
+	}else{
+		return "Therapist";
+	}
+	
+}
+
+
+
+
+function getOffice($vid){;
+	return Location::model()->findByPk($vid)->name;
+}
+
 ?>
 
 <h1>Manage Users</h1>
@@ -33,8 +53,20 @@ $this->breadcrumbs=array(
 		'LastName',
 		'Email',
 		'DOH',
-		'Office',
-		'Role',
+			array(
+			'name' => 'Office',
+			'type' => 'raw',
+			'header'=> 'Office',
+			'value' => 'CHtml::encode(getOffice($data->Office))'
+		),
+			
+				array(
+			'name' => 'Role',
+			'type' => 'raw',
+			'header'=> 'Role',
+			'value' => 'CHtml::encode(getRole($data->Role))'
+		),
+			
 		'Createdon',
 		
 		array(

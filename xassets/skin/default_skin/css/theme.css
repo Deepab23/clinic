@@ -24927,3 +24927,30 @@ body.timeline-page .panel-clone {
 	font-weight:normal;
 	color:#000;
 }
+
+ td.button-column a.view{
+	 display:none !important;
+ }
+ 
+ .fileUpload {
+    position: relative;
+    overflow: hidden;
+  
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.filename{
+	font-weight:normal;
+	font-size:11px;
+	display:block;
+}
