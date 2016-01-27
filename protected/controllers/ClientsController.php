@@ -151,6 +151,7 @@ class ClientsController extends Controller
 		$model=new Clients('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Clients']))
+			
 			$model->attributes=$_GET['Clients'];
 
 		$this->render('admin',array(
