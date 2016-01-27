@@ -3,7 +3,11 @@
 <h1>Manage Clients</h1>
 
 
+<div class="buttons-preview">
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/clients/create" class="btn btn-success"><i class="fa fa-plus"></i> Add Client</a>
+                             
 
+                                </div>
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'clients-grid',
 	'dataProvider'=>$model->search(),

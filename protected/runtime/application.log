@@ -6972,3 +6972,223 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
 ---
+2016/01/25 12:48:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/25 12:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/25 12:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/25 12:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/25 12:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/25 12:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/25 12:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/25 12:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/27 11:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/27 11:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/27 11:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/27 11:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/27 11:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/27 11:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/27 11:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/27 11:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/27 11:54:45 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#1 F:\wamp\www\pdm\trunk\framework\web\CActiveDataProvider.php(178): CActiveDataProvider->getTotalItemCount()
+#2 F:\wamp\www\pdm\trunk\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#3 F:\wamp\www\pdm\trunk\framework\zii\widgets\CBaseListView.php(125): CActiveDataProvider->getData()
+#4 F:\wamp\www\pdm\trunk\framework\zii\widgets\grid\CGridView.php(339): CGridView->init()
+#5 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(147): CGridView->init()
+#6 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(180): UsersController->createWidget()
+#7 F:\wamp\www\pdm\trunk\protected\views\users\therapist.php(78): UsersController->widget()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#9 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): UsersController->renderInternal()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): UsersController->renderFile()
+#11 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): UsersController->renderPartial()
+#12 F:\wamp\www\pdm\trunk\protected\controllers\UsersController.php(191): UsersController->render()
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(49): UsersController->actionTherapists()
+#14 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): UsersController->runAction()
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#17 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): UsersController->run()
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/users/therapists
+in F:\wamp\www\pdm\trunk\protected\views\users\therapist.php (78)
+in F:\wamp\www\pdm\trunk\protected\controllers\UsersController.php (191)
+in F:\wamp\www\pdm\trunk\index.php (14)
+2016/01/27 11:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/27 11:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
+2016/01/27 11:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/27 11:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
+2016/01/27 12:08:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard.html".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard.html')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/dashboard.html
+HTTP_REFERER=http://localhost/pdm/trunk/clients
+---

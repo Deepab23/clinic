@@ -169,6 +169,28 @@ $data= CHtml::listData($locations, 'id', 'name');
 			'model'=>$model,
 		));
 	}
+	
+	
+		/**	
+  	
+  Permissions:	
+   -­‐ Executives:	
+  can	
+  a
+	 * Manages all models.
+	 */
+	public function actionTherapists()
+	{
+		$model=new Users('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Users']))
+			$model->attributes=$_GET['Users'];
+		$model->attributes=array('Role'=>3);
+
+		$this->render('therapist',array(
+			'model'=>$model,
+		));
+	}
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

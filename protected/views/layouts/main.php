@@ -444,7 +444,7 @@ $("#bootbox-options").on('click', function () {
         if ( $(this).parsley().isValid() ) {
           
 $.ajax({
-	url:"<?php echo Yii::app()->request->baseUrl; ?>/users/changepassword/id/<?php echo @$_SESSION['user']['Id'] ?>",
+	url:"<?php echo Yii::app()->request->baseUrl; ?>/users/changepassword/id/<?php echo @$_SESSION['user']['id'] ?>",
 	data:$(this).serialize(),
 	type:"post",
 	success:function(data){

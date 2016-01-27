@@ -24954,3 +24954,7 @@ body.timeline-page .panel-clone {
 	font-size:11px;
 	display:block;
 }
+
+.btn-success{
+	text-transform:uppercase;
+}
