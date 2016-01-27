@@ -24958,3 +24958,9 @@ body.timeline-page .panel-clone {
 .btn-success{
 	text-transform:uppercase;
 }
+
+ div.row.buttons{
+	 
+	 clear:both;
+	 margin-top:10px;
+ }

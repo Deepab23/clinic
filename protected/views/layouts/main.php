@@ -184,15 +184,21 @@ Purchase: http://wrapbootstrap.com
               <span class="sidebar-title"> Client</span>
             </a>
           </li>
+		  <?php
+		   if($_SESSION['user']['Role']!=3){
+		  ?>
           <li>
-            <a href="dashboard.html">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/users/therapists">
               <span class="fa fa-users"></span>
               <span class="sidebar-title"> Therapists</span>
             </a>
           </li>
+		  <?php
+		   }
+		  ?>
 		  
 		    <li >
-            <a href="dashboard.html">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/session">
               <span class="glyphicon glyphicon-home"></span>
               <span class="sidebar-title"> Sessions</span>
             </a>

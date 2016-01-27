@@ -151,4 +151,19 @@ public function actionCreate()
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
+	
+		function actionGetNames() {
+	  if (!empty($_GET['term'])) {
+		$sql = 'SELECT  id,CONCAT(FirstName," ",LastName) as value, CONCAT(FirstName," ",LastName) as label FROM clients WHERE FirstName LIKE :qterm ';
+		$sql .= ' ORDER BY FirstName ASC';
+		$command = Yii::app()->db->createCommand($sql);
+		$qterm = $_GET['term'].'%';
+		$command->bindParam(":qterm", $qterm, PDO::PARAM_STR);
+		$result = $command->queryAll();
+		echo CJSON::encode($result); exit;
+	  } else {
+		return false;
+	  }
+	}
 }
