@@ -103,4 +103,11 @@ class Controller extends CController
     }
 
 	
+	public function getUsername($id){
+		
+$userx=Users::model()->findByPk($id);
+
+return $userx->FirstName." ".$userx->LastName;
+	}
+	
 }

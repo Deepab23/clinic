@@ -4,6 +4,9 @@ $U=$_SESSION['user'];
 $FN=$U['FirstName'];
 $LN=$U['LastName'];
 $EM=$U['Email'];
+$EBCHECK=$U['EB'];
+$ECCHECK=$U['EC'];
+$EECHECK=$U['EE'];
 ?>
 <!DOCTYPE html>
 <!--
@@ -37,6 +40,11 @@ Purchase: http://wrapbootstrap.com
 
   <!-- Admin Forms CSS -->
   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/xassets/admin-tools/admin-forms/css/admin-forms.css">
+  
+  
+  
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css">
+  
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.ico">
@@ -329,10 +337,10 @@ Purchase: http://wrapbootstrap.com
       <div class="modal-body">
 	  <div class="alert" style="display:none">
                     <button data-dismiss="alert" class="close" type="button">x</button>
-                    <i class="fa fa-ok-sign"></i> <span id="messages"> </span>
+                    <i class="fa fa-ok-sign"></i> <span id="messages-userupdate"> </span>
                   </div>
         <div class="panel-body">
-                      <form class="bs-example form-horizontal" data-validate="parsley" id="updateuserinfo">
+                      <form class="bs-example form-horizontal" data-validate="parsley" id="updateuserinf">
                         <div class="form-group">
                           <label class="col-lg-4 control-label">First Name</label>
                           <div class="col-lg-8">
@@ -359,13 +367,13 @@ Purchase: http://wrapbootstrap.com
                           <label class="col-lg-4 control-label">Education</label>
                           <div class="col-lg-8">
 						  <div>
-                             <input type="checkbox" value="1" id="Users_EBe" name="Users[EB]">	<label for="Users_EB">Bachelor of&nbsp;Kinesiology</label>  
+                             <input type="checkbox" value="1" id="Users_EBe" name="Users[EB]" <?php echo ( $EBCHECK == 1 ) ? 'checked' : '';?>>	<label for="Users_EB">Bachelor of&nbsp;Kinesiology</label>  
 							 
 							 </div>
 							 
 							 <div>
 							 
-							 <input type="checkbox" value="1" id="Users_ECe" name="Users[EC]">	<label for="Users_EC">Certified	
+							 <input type="checkbox" value="1" id="Users_ECe" name="Users[EC]" <?php echo ( $ECCHECK == 1 ) ? 'checked' : '';?>>	<label for="Users_EC">Certified	
  &nbsp;Exercise	
  &nbsp;Physiologist</label>   
     &nbsp;
@@ -374,7 +382,7 @@ Purchase: http://wrapbootstrap.com
 	</div>
 	
 	 <div>
-<input type="checkbox" value="1" id="Users_EEe" name="Users[EE]">	<label for="Users_EE">Exercise	
+<input type="checkbox" value="1" id="Users_EEe" name="Users[EE]" <?php echo ( $EECHECK == 1 ) ? 'checked' : '';?>>	<label for="Users_EE">Exercise	
  &nbsp;Specialist</label> 
  </div>
                           </div>
@@ -385,7 +393,7 @@ Purchase: http://wrapbootstrap.com
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="$('#formcpasspass').submit()">Update</button>
+        <button type="button" class="btn btn-primary" onclick="$('#updateuserinf').submit()">Update</button>
       </div>
     </div>
   </div>
@@ -401,9 +409,17 @@ Purchase: http://wrapbootstrap.com
 
  <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery-1.11.1.min.js"></script>
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+  
+
+
+
+
 
   <!-- Theme Javascript -->
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/utility/utility.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+  
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/demo/demo.js"></script>
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/main.js"></script>
    <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/js/parsley/parsley.min.js"></script>
@@ -477,7 +493,34 @@ $.ajax({
         }
     });
 	
-
+	$('#updateuserinf').submit(function(e){
+			e.preventDefault();
+		if ( $(this).parsley().isValid() ) {	
+		$.ajax({
+			url:"<?php echo Yii::app()->request->baseUrl; ?>/users/userupdate/id/<?php echo @$_SESSION['user']['id'] ?>",
+			data:$(this).serialize(),
+			type:"post",
+			success:function(data){
+				if(data==1){
+					$('#messages-userupdate').text("UserInfo updated successfully")
+					$('.alert').removeClass('alert-danger');
+					$('.alert').addClass('alert-success');
+					$('.alert').show();
+			
+				setTimeout(function(){
+					window.location.reload();
+				},1500);
+			}else{
+				$('#messages-userupdate').text("There is problem in updation")
+				$('.alert').removeClass('alert-success');
+				$('.alert').addClass('alert-danger');
+				$('.alert').show();
+			
+			}
+			}
+			});
+	}
+	});
 
 }); 
 

@@ -61,6 +61,28 @@ class SessionController extends Controller
 				
 
 				}
+				if(isset($_POST['comments'])){
+					foreach($_POST['comments'] as $cmt){
+						$mcm= new SessionComment;
+						$mcm->comment=$cmt;
+						$mcm->users_id=Yii::app()->user->id;
+						$mcm->session_id=$cid;
+						
+						$mcm->save();
+						
+					}
+				}
+				
+					if(isset($_POST['thrapist'])){
+						
+						foreach($_POST['thrapist'] as $kx=>$thid){
+				$sth= new SessionTherapist;
+				$sth->therapist_id=$thid;
+				$sth->total_time=$_POST['thrapisttime'][$kx];
+				$sth->session_id=$cid;
+				$sth->save();
+						}
+					}
 				
           $this->redirect(array('index'));
 			}
@@ -105,10 +127,35 @@ class SessionController extends Controller
 				$ca->url=$pname;
 				$ca->description=$afilesdesc;
 				$ca->save();
+				}
 				
+				
+				if(isset($_POST['comments'])){
+					foreach($_POST['comments'] as $cmt){
+						$mcm= new SessionComment;
+						$mcm->comment=$cmt;
+						$mcm->users_id=Yii::app()->user->id;
+						$mcm->session_id=$cid;
+						
+						$mcm->save();
+						
+					}
+				}
+				
+					if(isset($_POST['thrapist'])){
+						
+						foreach($_POST['thrapist'] as $kx=>$thid){
+				$sth= new SessionTherapist;
+				$sth->therapist_id=$thid;
+				$sth->total_time=$_POST['thrapisttime'][$kx];
+				$sth->session_id=$cid;
+				$sth->save();
+						}
+					}
+					
 			
 				
-				}
+				
 				
 
 				}
@@ -165,6 +212,20 @@ class SessionController extends Controller
 			'model'=>$model,
 		));
 	}
+	
+	
+	
+		public function actionTherapist($id)
+	{
+		$model=new Session('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Session']))
+			$model->attributes=$_GET['Session'];
+
+		$this->render('admin',array(
+			'model'=>$model,
+		));
+	}
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
@@ -193,4 +254,6 @@ class SessionController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+		
 }

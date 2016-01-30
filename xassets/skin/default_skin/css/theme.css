@@ -12286,7 +12286,7 @@ a.list-group-item.active > .badge,
 ================================================= */
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 1px;
   margin-bottom: 19px;
   line-height: 1.49;
   background-color: #ffffff;

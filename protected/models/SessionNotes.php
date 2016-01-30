@@ -28,7 +28,7 @@ class SessionNotes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('session_id, url, description, date', 'required'),
+			array('session_id, url, description', 'required'),
 			array('session_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

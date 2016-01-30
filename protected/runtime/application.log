@@ -7376,3 +7376,1426 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
 ---
+2016/01/27 16:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/27 16:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/27 16:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/27 16:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/27 16:39:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/27 16:39:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/27 16:39:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/27 16:39:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/28 11:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/28 11:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/28 11:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/28 11:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/28 11:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/28 11:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/28 11:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/28 11:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/28 11:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/28 11:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/28 11:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/28 11:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/28 12:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assetsx/img/avatars/3.jpg".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assetsx/img/ava...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assetsx/img/avatars/3.jpg
+HTTP_REFERER=http://localhost/pdm/trunk/session/create
+---
+2016/01/28 12:00:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assetsx/img/avatars/3.jpg".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assetsx/img/ava...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assetsx/img/avatars/3.jpg
+HTTP_REFERER=http://localhost/pdm/trunk/session/create
+---
+2016/01/28 12:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assetsx/img/avatars/3.jpg".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assetsx/img/ava...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assetsx/img/avatars/3.jpg
+HTTP_REFERER=http://localhost/pdm/trunk/session/create
+---
+2016/01/28 12:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assetsx/img/avatars/3.jpg".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assetsx/img/ava...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assetsx/img/avatars/3.jpg
+---
+2016/01/28 14:23:49 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1349): Users->applyScopes()
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(27): Users->findAll()
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#6 F:\wamp\www\pdm\trunk\protected\views\session\create.php(5): SessionController->renderPartial()
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): SessionController->renderPartial()
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(72): SessionController->render()
+#12 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(49): SessionController->actionCreate()
+#13 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): SessionController->runAction()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): SessionController->runActionWithFilters()
+#16 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): SessionController->run()
+#17 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/session/create
+in F:\wamp\www\pdm\trunk\protected\views\session\_form.php (27)
+in F:\wamp\www\pdm\trunk\protected\views\session\create.php (5)
+in F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php (72)
+2016/01/28 16:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/28 16:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/28 16:10:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/28 16:10:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/28 16:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/28 16:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/28 16:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/28 16:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/28 16:10:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/28 16:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/28 16:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/28 16:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/29 05:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/29 05:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/29 05:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/29 05:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/29 05:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/29 05:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/29 05:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/29 05:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/29 06:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/29 06:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/29 06:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/29 06:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/29 06:45:50 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(213): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:47:29 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(213): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:47:30 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(213): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:47:31 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(213): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:47:33 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(213): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:49:02 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1349): Users->applyScopes()
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(35): Users->findAll()
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): SessionController->renderPartial()
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): SessionController->renderPartial()
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): SessionController->render()
+#12 unknown(0): SessionController->actionUpdate()
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): SessionController->runAction()
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): SessionController->runActionWithFilters()
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): SessionController->run()
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/session/update/4
+in F:\wamp\www\pdm\trunk\protected\views\session\_form.php (35)
+in F:\wamp\www\pdm\trunk\protected\views\session\update.php (5)
+in F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php (144)
+2016/01/29 06:49:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/29 06:49:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/29 06:49:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/29 06:49:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/29 06:49:17 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:49:24 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:50:25 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:50:26 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:50:28 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:50:28 [error] [exception.CException] exception 'CException' with message 'SessionController and its behaviors do not have a method or closure named "getCommandBuilder".' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): CComponent->__call('getCommandBuild...', Array)
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1474): SessionController->getCommandBuilder()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(221): CActiveRecord->findAll(Object(CDbCriteria))
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#12 [internal function]: SessionController->actionUpdate('4')
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/pdm/trunk/session/update/4
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 06:56:36 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1349): Users->applyScopes()
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(27): Users->findAll()
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): SessionController->renderPartial()
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): SessionController->renderPartial()
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): SessionController->render()
+#12 unknown(0): SessionController->actionUpdate()
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): SessionController->runAction()
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): SessionController->runActionWithFilters()
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): SessionController->run()
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/session/update/4
+in F:\wamp\www\pdm\trunk\protected\views\session\_form.php (27)
+in F:\wamp\www\pdm\trunk\protected\views\session\update.php (5)
+in F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php (144)
+2016/01/29 06:59:04 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1349): Users->applyScopes()
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(27): Users->findAll()
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): SessionController->renderPartial()
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): SessionController->renderPartial()
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): SessionController->render()
+#12 unknown(0): SessionController->actionUpdate()
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): SessionController->runAction()
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): SessionController->runActionWithFilters()
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): SessionController->run()
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/session/update/4
+in F:\wamp\www\pdm\trunk\protected\views\session\_form.php (27)
+in F:\wamp\www\pdm\trunk\protected\views\session\update.php (5)
+in F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php (144)
+2016/01/29 06:59:12 [error] [php] Invalid argument supplied for foreach() (F:\wamp\www\pdm\trunk\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1349): Users->applyScopes()
+#1 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#2 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(27): Users->findAll()
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#6 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): SessionController->renderPartial()
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require()
+#8 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): SessionController->renderInternal()
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): SessionController->renderFile()
+#10 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): SessionController->renderPartial()
+#11 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): SessionController->render()
+#12 unknown(0): SessionController->actionUpdate()
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#14 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): SessionController->runAction()
+#17 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): SessionController->runActionWithFilters()
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): SessionController->run()
+#19 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 F:\wamp\www\pdm\trunk\index.php(14): CWebApplication->run()
+REQUEST_URI=/pdm/trunk/session/update/4
+in F:\wamp\www\pdm\trunk\protected\views\session\_form.php (27)
+in F:\wamp\www\pdm\trunk\protected\views\session\update.php (5)
+in F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php (144)
+2016/01/29 08:41:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
+2016/01/29 08:41:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/29 08:41:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
+2016/01/29 08:41:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/29 08:42:30 [warning] [application] Failed to set unsafe attribute "About" of "Users".
+in F:\wamp\www\pdm\trunk\protected\controllers\UsersController.php (52)
+in F:\wamp\www\pdm\trunk\index.php (14)
+2016/01/29 14:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/29 14:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/29 14:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/29 14:28:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/29 14:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/29 14:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/29 14:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/29 14:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/29 14:28:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/29 14:28:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/29 14:28:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.png
+---
+2016/01/29 14:28:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update/...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/update/assets/img/favicon.ico
+---
+2016/01/29 14:42:58 [error] [exception.CException] exception 'CException' with message 'Property "SessionTherapist.date" is not defined.' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(145): CComponent->__get('date')
+#1 F:\wamp\www\pdm\trunk\protected\views\session\_form.php(179): CActiveRecord->__get('date')
+#2 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#4 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\protected\views\session\update.php(5): CController->renderPartial('_form', Array)
+#6 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#7 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#8 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#9 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#10 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(144): CController->render('update', Array)
+#11 [internal function]: SessionController->actionUpdate('5')
+#12 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#13 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('update')
+#18 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/update')
+#19 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/pdm/trunk/session/update/5
+HTTP_REFERER=http://localhost/pdm/trunk/session
+---
+2016/01/29 14:58:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\wamp\www\pdm\trunk\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\wamp\www\pdm\trunk\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\wamp\www\pdm\trunk\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\wamp\www\pdm\trunk\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('sessionNotes/de...')
+#9 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/pdm/trunk/sessionNotes/delete/2
+HTTP_REFERER=http://localhost/pdm/trunk/session/update/5
+---
+2016/01/29 14:58:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\wamp\www\pdm\trunk\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\wamp\www\pdm\trunk\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\wamp\www\pdm\trunk\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\wamp\www\pdm\trunk\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('sessionNotes/de...')
+#9 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/pdm/trunk/sessionNotes/delete/3
+HTTP_REFERER=http://localhost/pdm/trunk/session/update/5
+---
+2016/01/29 15:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/29 15:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/29 15:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.png
+---
+2016/01/29 15:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/session/assets/img/favicon.ico
+---
+2016/01/29 15:17:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view/as...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/view/assets/img/favicon.png
+---
+2016/01/29 15:17:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view/as...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/view/assets/img/favicon.ico
+---
+2016/01/29 15:17:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view/as...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/view/assets/img/favicon.png
+---
+2016/01/29 15:17:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\wamp\www\pdm\trunk\framework\web\CController.php:336
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#4 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view/as...')
+#5 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/pdm/trunk/session/view/assets/img/favicon.ico
+---
+2016/01/29 16:15:56 [error] [exception.CException] exception 'CException' with message 'Property "Location.FirstNames" is not defined.' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(145): CComponent->__get('FirstNames')
+#1 F:\wamp\www\pdm\trunk\protected\views\session\view.php(4): CActiveRecord->__get('FirstNames')
+#2 F:\wamp\www\pdm\trunk\protected\views\session\view.php(17): getClientname('2')
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(21): CController->render('view', Array)
+#8 [internal function]: SessionController->actionView('5')
+#9 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#10 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#11 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#15 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view')
+#16 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/pdm/trunk/session/view/5
+---
+2016/01/29 16:16:17 [error] [exception.CException] exception 'CException' with message 'Property "Clients.FirstNames" is not defined.' in F:\wamp\www\pdm\trunk\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\db\ar\CActiveRecord.php(145): CComponent->__get('FirstNames')
+#1 F:\wamp\www\pdm\trunk\protected\views\session\view.php(4): CActiveRecord->__get('FirstNames')
+#2 F:\wamp\www\pdm\trunk\protected\views\session\view.php(17): getClientname('2')
+#3 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(126): require('F:\\wamp\\www\\pdm...')
+#4 F:\wamp\www\pdm\trunk\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\wamp\\www\\pdm...', Array, true)
+#5 F:\wamp\www\pdm\trunk\framework\web\CController.php(869): CBaseController->renderFile('F:\\wamp\\www\\pdm...', Array, true)
+#6 F:\wamp\www\pdm\trunk\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 F:\wamp\www\pdm\trunk\protected\controllers\SessionController.php(21): CController->render('view', Array)
+#8 [internal function]: SessionController->actionView('5')
+#9 F:\wamp\www\pdm\trunk\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SessionController), Array)
+#10 F:\wamp\www\pdm\trunk\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SessionController), Object(ReflectionMethod), Array)
+#11 F:\wamp\www\pdm\trunk\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 F:\wamp\www\pdm\trunk\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 F:\wamp\www\pdm\trunk\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('view')
+#15 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('session/view')
+#16 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/pdm/trunk/session/view/5
+---
+2016/01/30 15:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/30 15:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/30 15:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.png
+---
+2016/01/30 15:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#1 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/pdm/trunk/assets/img/favicon.ico
+---
+2016/01/30 15:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/30 15:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/30 15:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.png
+---
+2016/01/30 15:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/site/assets/img/favicon.ico
+---
+2016/01/30 15:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/30 15:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
+2016/01/30 15:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.ico
+---
+2016/01/30 15:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in F:\wamp\www\pdm\trunk\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\pdm\trunk\framework\web\CController.php(270): CController->missingAction('assets')
+#1 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 F:\wamp\www\pdm\trunk\framework\web\CWebApplication.php(141): CWebApplication->runController('users/assets/im...')
+#3 F:\wamp\www\pdm\trunk\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\wamp\www\pdm\trunk\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/pdm/trunk/users/assets/img/favicon.png
+---
