@@ -241,4 +241,20 @@ $data= CHtml::listData($locations, 'id', 'name');
 		}
 		die;
 	}
+	
+	public function actionUserUpdate($id){
+		///echo "<pre>";print_r($_POST);die;
+		$user=Users::model()->findByPk($id);
+		$user->FirstName=$_POST['firstname'];
+		$user->LastName=$_POST['lastname'];
+		$user->Email=$_POST['email'];
+		$user->EB=isset($_POST['Users']['EB'])?'1':'0';
+		$user->EC=isset($_POST['Users']['EC'])?'1':'0';
+		$user->EE=isset($_POST['Users']['EE'])?'1':'0';
+		if($user->save()){
+			echo 1;
+		}else{
+			echo $user->getErrors();
+		}die;
+	}
 }

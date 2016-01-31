@@ -214,7 +214,7 @@ Purchase: http://wrapbootstrap.com
 		  
 		  
 		   <li>
-            <a href="dashboard.html">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/reports">
               <span class="glyphicon glyphicon-home"></span>
               <span class="sidebar-title">Reports</span>
             </a>
@@ -523,10 +523,12 @@ $.ajax({
 	});
 
 }); 
-
+$(function(){
+	
+	$(".mysetect").select2();
+});
 </script>
 
-</script>
 
 </html>
 
