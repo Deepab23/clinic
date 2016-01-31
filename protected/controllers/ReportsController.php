@@ -288,5 +288,20 @@ class ReportsController extends Controller
 		}
 	}
 	
+	
+		public  function actionPdf()
+	{
+		
+		$mPDF1 = Yii::app()->ePdf->mpdf('', 'A4');
+ 
+        # render (full page)
+        $mPDF1->WriteHTML('<h1> Repost  </h1>');
+ 
+    
+        # Outputs ready PDF
+        $mPDF1->Output();
+		
+	}
+	
 		
 }

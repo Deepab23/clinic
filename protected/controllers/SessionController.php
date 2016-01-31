@@ -217,12 +217,39 @@ class SessionController extends Controller
 	
 		public function actionTherapist($id)
 	{
-		$model=new Session('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Session']))
-			$model->attributes=$_GET['Session'];
+		
+		$sql = "SELECT a.*,concat(c.FirstName,' ', c.LastName) as cname FROM  session a,session_therapist b, clients c where a.id=b.session_id and b.therapist_id=$id and c.id=a.client_id";
+ 
+$rawData = Yii::app()->db->createCommand($sql); //or use ->queryAll(); in CArrayDataProvider
+$count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM (' . $sql . ') as count_alias')->queryScalar(); //the count
+ 
+ 
+        $model = new CSqlDataProvider($rawData, array( //or $model=new CArrayDataProvider($rawData, array(... //using with querAll...
+                    'keyField' => 'id', 
+                    'totalItemCount' => $count,
+ 
+                    //if the command above use PDO parameters
+                    //'params'=>array(
+                    //':param'=>$param,
+                    //),
+ 
+ 
+                    'sort' => array(
+                        'attributes' => array(
+                            'id',
+                        ),
+                        'defaultOrder' => array(
+                            'id' => CSort::SORT_ASC, //default sort value
+                        ),
+                    ),
+                    'pagination' => array(
+                        'pageSize' => 10,
+                    ),
+                ));
+ 
+  
 
-		$this->render('admin',array(
+		$this->render('threp',array(
 			'model'=>$model,
 		));
 	}

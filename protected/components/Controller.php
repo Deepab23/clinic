@@ -110,4 +110,7 @@ $userx=Users::model()->findByPk($id);
 return $userx->FirstName." ".$userx->LastName;
 	}
 	
+	
+	
+	
 }
