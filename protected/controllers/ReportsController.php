@@ -189,12 +189,12 @@ class ReportsController extends Controller
 	public function actionIndex()
 	{
 		$connection = Yii::app()->db;
-		$reports='';
+		$reports=array();
 		if(!empty($_POST)){
 			$where='WHERE';
 			if(isset($_POST['thrapist']) && !empty($_POST['thrapist'])){
 				$thrapist=$_POST['thrapist'];
-				 $where.=" st.therapist_id='".$thrapist."'";
+				 $where.=" st.therapist_id IN(".implode(',',$thrapist).")";
 				
 			}
 			if(isset($_POST['Client']) && !empty($_POST['Client'])){
@@ -202,7 +202,8 @@ class ReportsController extends Controller
 				$where.=" AND";
 				}
 				$client=$_POST['Client'];
-				$where.=" c.id='".$client."'";
+				$where.=" c.id IN(".implode(',',$client).")";
+				
 				
 			}
 			if(isset($_POST['Start']) && !empty($_POST['Start']) && isset($_POST['end']) && !empty($_POST['end'])){
@@ -219,10 +220,10 @@ class ReportsController extends Controller
 			//echo $sql;die;
 			$command = $connection->createCommand($sql);
 			$reports= $command->queryAll();
-				$reports[0]['cid']=@$_POST['Client'];
-				$reports[0]['tid']=@$_POST['thrapist'];
-				$reports[0]['start']=@$_POST['Start'];
-				$reports[0]['end']=@$_POST['end'];				
+			$reports[0]['cid']=@$_POST['Client'];
+			$reports[0]['tid']=@$_POST['thrapist'];
+			$reports[0]['start']=@$_POST['Start'];
+			$reports[0]['end']=@$_POST['end'];				
 			
 		}
 		 //executes the SQL

@@ -9,15 +9,17 @@
 		$Criteria = new CDbCriteria();
 		$theClients=Clients::model()->findAll($Criteria);
 ?>
+
 <form method="post" action="">
 <div class="col-xs-5">
 <label>Therapist’s</label>
-<select class="form-control mysetect" name="thrapist">
+<select class="form-control mysetect" name="thrapist[]" multiple>
 <option value=''>Select Therapist</option>
 <?php
 foreach($therep as $trep){
 	$selected='';
-	if(@$model[0]['tid']==$trep->id){
+	
+	if(in_array($trep->id, @$model[0]['tid'])){
 		$selected='selected';
 	}
 	echo "<option value='$trep->id' $selected> $trep->FirstName</option>";
@@ -26,12 +28,12 @@ foreach($therep as $trep){
 </select>
 <label>Clients</label>
 
-<select class="form-control mysetect" name="Client">
+<select class="form-control mysetect" name="Client[]" multiple>
 <option value=''>Select Clients</option>
 <?php
 foreach($theClients as $client){
 	$selected='';
-	if(@$model[0]['cid']==$client->id){
+	if(in_array($client->id, @$model[0]['cid'])){
 		$selected='selected';
 	}
 	echo "<option value='$client->id' $selected> $client->FirstName</option>";
@@ -73,6 +75,8 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 <input type="submit" value="Search" class="btn  btn-system">
 	</div>
 </form>
+<h3>Total Records:<?php echo (count(@$model)>0)?count(@$model):'0'?></h3>
+<h3>Total Hours:</h3>
 <h1>Manage Reports</h1>
 	<div class="panel-heading">
               <span class="panel-title">
@@ -97,6 +101,7 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
                   <tbody>
                     <?php
 					if(!empty($model)){
+						//die('ddd');
 						foreach($model as $session){ ?>
 					<tr>
                       <td><?php echo $session['FirstName']?>&nbsp;<?php echo $session['FirstName']?></td>
@@ -104,7 +109,17 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 					  <td><?php echo $session['thFirstName']?>&nbsp;<?php echo $session['thFirstName']?></td>
 					  <td><?php echo $session['total_time']?></td>
 					  <td><?php echo $session['workout']?></td>
-					  <td><button>Comment</button></td>
+					  <td>
+							<?php 
+							$id=$session['id'];
+							$Criterias = new CDbCriteria();
+									$Criterias->condition = "session_id=$id";
+									$cmts=SessionComment::model()->findAll($Criterias);
+									//echo "<pre>";print_r($cmts);
+									foreach($cmts as $cm){ ?>
+										<div class="media mt25"><a href="#" class="pull-left"> <img alt="..." src=" <?php echo Yii::app()->request->baseUrl; ?>/xassets/img/avatars/images.jpg" class="media-object mn thumbnail thumbnail-sm rounded mw40"> </a><div class="media-body mb5"><?php echo $cm->comment  ?> </p></div></div>
+									<?php } ?>
+					  </td>
                     </tr>
 					<?php } } ?>
                   </tbody>

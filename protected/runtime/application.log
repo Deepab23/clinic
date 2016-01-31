@@ -1,291 +1,54 @@
-2016/01/30 17:51:48 [error] [exception.CException] exception 'CException' with message 'ReportsController cannot find the requested view "admin".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:878
+2016/01/31 16:26:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(201): CController->render('admin', Array)
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:23:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st O' at line 1. The SQL statement executed was: Select s.* INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:23:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st O' at line 1. The SQL statement executed was: Select s.* INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:24:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22] [1054] Unknown column 'sc.comment' in 'field list'. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id .
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:24:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22] [1054] Unknown column 'sc.comment' in 'field list'. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id ' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:24:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22] [1054] Unknown column 'sc.comment' in 'field list'. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:24:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22] [1054] Unknown column 'sc.comment' in 'field list'. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:32:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02] [1051] Unknown table 's'. The SQL statement executed was: Select s.* from session INNER JOIN session_comment as sc ON sc.session_id=s.ID.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:32:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02] [1051] Unknown table 's'. The SQL statement executed was: Select s.* from session INNER JOIN session_comment as sc ON sc.session_id=s.ID' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:36:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName ' at line 1. The SQL statement executed was: Select s.*,s.id as s.IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:36:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName ' at line 1. The SQL statement executed was: Select s.*,s.id as s.IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:37:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as th' at line 1. The SQL statement executed was: Select s.*,s.id as IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:37:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as th' at line 1. The SQL statement executed was: Select s.*,s.id as IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/30 18:37:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as th' at line 1. The SQL statement executed was: Select s.*,s.id as IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (193)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/30 18:37:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as th' at line 1. The SQL statement executed was: Select s.*,s.id as IDs c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(193): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
----
-2016/01/31 10:27:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/reports/assets/img/favicon.png
----
-2016/01/31 10:27:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/reports/assets/img/favicon.ico
----
-2016/01/31 10:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/reports/assets/img/favicon.png
----
-2016/01/31 10:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/reports/assets/img/favicon.ico
----
-2016/01/31 10:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
 #1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
 #2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
 #3 {main}
-REQUEST_URI=/yiidh/clinic/assets/img/favicon.png
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
-2016/01/31 10:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
+2016/01/31 16:26:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
 #1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
 #2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
 #3 {main}
-REQUEST_URI=/yiidh/clinic/assets/img/favicon.ico
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
-2016/01/31 10:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.ico".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
+2016/01/31 16:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
 #1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
 #2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
 #3 {main}
-REQUEST_URI=/yiidh/clinic/assets/img/favicon.ico
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
-2016/01/31 10:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/favicon.png".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
+2016/01/31 16:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/favi...')
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
 #1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
 #2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
 #3 {main}
-REQUEST_URI=/yiidh/clinic/assets/img/favicon.png
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
-2016/01/31 10:34:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
+2016/01/31 16:27:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/session/assets/img/favicon.ico
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
+#1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
-2016/01/31 10:34:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
+2016/01/31 16:27:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xassets/img/avatars/images.jpg".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/session/assets/img/favicon.png
----
-2016/01/31 10:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/session/assets/img/favicon.ico
----
-2016/01/31 10:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php:483
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(270): CController->missingAction('assets')
-#1 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('assets')
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('session/assets/...')
-#3 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#4 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#5 {main}
-REQUEST_URI=/yiidh/clinic/session/assets/img/favicon.png
----
-2016/01/31 11:45:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id WHERE st.therapist_id='5' AND.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (208)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/31 11:45:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName,sc.comment from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id INNER JOIN session_comment as sc ON sc.session_id=s.id WHERE st.therapist_id='5' AND' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(208): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
-HTTP_REFERER=http://localhost/yiidh/clinic/reports/index
----
-2016/01/31 11:56:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id WHERE st.therapist_id='5' AND.
-in C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php (209)
-in C:\xampp\htdocs\yiidh\clinic\index.php (14)
-2016/01/31 11:56:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000] [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: Select s.*,c.FirstName,c.LastName,st.total_time,u.FirstName as thFirstName,u.LastName as thLastName from session as s INNER JOIN clients as c ON c.id=s.client_id INNER JOIN session_therapist as st ON st.session_id=s.id INNER JOIN users as u ON u.id=st.therapist_id WHERE st.therapist_id='5' AND' in C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php:543
-Stack trace:
-#0 C:\xampp\htdocs\yiidh\clinic\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\yiidh\clinic\protected\controllers\ReportsController.php(209): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\yiidh\clinic\framework\web\actions\CInlineAction.php(49): ReportsController->actionIndex()
-#3 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 C:\xampp\htdocs\yiidh\clinic\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(282): CController->run('index')
-#7 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('reports/index')
-#8 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#9 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
-#10 {main}
-REQUEST_URI=/yiidh/clinic/reports/index
-HTTP_REFERER=http://localhost/yiidh/clinic/reports/index
+#0 C:\xampp\htdocs\yiidh\clinic\framework\web\CWebApplication.php(141): CWebApplication->runController('xassets/img/ava...')
+#1 C:\xampp\htdocs\yiidh\clinic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiidh\clinic\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiidh/clinic/xassets/img/avatars/images.jpg
+HTTP_REFERER=http://localhost/yiidh/clinic/reports
 ---
