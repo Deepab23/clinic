@@ -51,7 +51,7 @@ Purchase: http://wrapbootstrap.com
 
     <!--Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
-
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery-1.11.1.min.js"></script>
 
 
 
@@ -407,7 +407,7 @@ Purchase: http://wrapbootstrap.com
 
   <!-- BEGIN: PAGE SCRIPTS -->
 
- <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery-1.11.1.min.js"></script>
+ 
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/xassets/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
   
 

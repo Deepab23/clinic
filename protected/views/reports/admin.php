@@ -76,7 +76,7 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 	</div>
 </form>
 <h3>Total Records:<?php echo (count(@$model)>0)?count(@$model):'0'?></h3>
-<h3>Total Hours:</h3>
+<h3>Total Hours:<span class='total_hours'>0</span></h3>
 <h1>Manage Reports</h1>
 	<div class="panel-heading">
               <span class="panel-title">
@@ -102,7 +102,10 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
                     <?php
 					if(!empty($model)){
 						//die('ddd');
-						foreach($model as $session){ ?>
+						$total_time=0;
+						foreach($model as $session){ 
+							echo $total_time+=$session['total_time'];
+						?>
 					<tr>
                       <td><?php echo $session['FirstName']?>&nbsp;<?php echo $session['FirstName']?></td>
 					  <td><?php echo $session['date']?></td>
@@ -142,3 +145,8 @@ $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 }
 
 </style>
+<script>
+$(function(){
+	$(".total_hours").text(<?php echo $total_time?>);
+});
+</script>
