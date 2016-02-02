@@ -64,7 +64,7 @@ function getOffice($vid){;
 			'name' => 'EE',
 			'type' => 'raw',
 			'header'=> 'View Sessioss',
-			'value' => 'CHtml::link("View Sessions",Yii::app()->createUrl("user/view",array("id"=>$data->id)))'
+			'value' => 'CHtml::link("View Sessions",Yii::app()->createUrl("session/therapist",array("id"=>$data->id)))'
 			
      
 		),

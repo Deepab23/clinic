@@ -86,6 +86,23 @@ class Clients extends CActiveRecord
 			'notes' => 'Notes',
 		);
 	}
+	
+	
+		public function defaultScope()
+{
+    $alias = $this->getTableAlias(false,false);
+	if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']!=1){
+		 
+		$of=$_SESSION['user']['Office'];
+		 return array(
+        'condition'=>"`$alias`.`location` = $of",
+    );
+	
+	}
+	}
+    
+}
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.

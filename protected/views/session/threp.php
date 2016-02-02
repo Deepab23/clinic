@@ -7,6 +7,8 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 
+
+
 	
 
 
@@ -18,10 +20,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'columns' => array(
  
         array(
-            'header' => 'ID',
+            'header' => 'View Session',
             'name' => 'id',
-            //'value'=>'$data["MAIN_ID"]', //in the case we want something custom
-        ),
+			'type'=>'raw',
+            'value'=>'CHtml::link("View Session",array("session/view","id"=>$data["id"]))',
+			),
         array(
             'header' => 'Client',
             'name' => 'cname'
@@ -46,6 +49,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'template' => '{delete}',
             'buttons' => array(
                 'delete' => array('url' => '$this->grid->controller->createUrl("delete",array("id"=>$data["id"]))'),
+				
             ),
         ),
     ),

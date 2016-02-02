@@ -226,6 +226,8 @@ class ReportsController extends Controller
 			$reports[0]['end']=@$_POST['end'];				
 			
 		}
+		
+		
 		 //executes the SQL
 		$this->render('admin',array(
 			'model'=>$reports,
@@ -294,8 +296,10 @@ class ReportsController extends Controller
 		
 		$mPDF1 = Yii::app()->ePdf->mpdf('', 'A4');
  
+
         # render (full page)
-        $mPDF1->WriteHTML('<h1> Repost  </h1>');
+		$pdfforhtml=$_POST['pdfforhtml'];
+        $mPDF1->WriteHTML($pdfforhtml);
  
     
         # Outputs ready PDF

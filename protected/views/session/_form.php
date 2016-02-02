@@ -41,26 +41,28 @@
 		$c=Clients::model()->findByPk($model->client_id);
 		$val=$c->FirstName." ".$c->LastName;
 		}
-$this->widget('zii.widgets.jui.CJuiAutoComplete', array(
-	'name'=>'client_id',
-	'value'=>$val,
-//	'source'=>$people, // <- use this for pre-set array of values
-	'source'=>Yii::app()->request->baseUrl.'/site/getNames',// <- path to controller which returns dynamic data
-	// additional javascript options for the autocomplete plugin
-	'options'=>array(
-		'minLength'=>'1', // min chars to start search
-		'select'=>'js:function(event, ui) {
-			$("#setclientval").val(ui.item.id);
-			console.log(ui.item.id +":"+ui.item.value); }'
-	),
-	'htmlOptions'=>array(
-		'id'=>'person',
-		'rel'=>'val',
-		'class'=>'form-control'
-	),
-));
+		
 		?>
-		<input type="hidden" name="Session[client_id]" id="setclientval" value="<?php echo $model->client_id  ?>">
+		
+		
+		<select class="form-control mysetect" name="Session[client_id]" >
+<option value=''>Select Clients</option>
+<?php
+
+$Criteria = new CDbCriteria();
+$theClients=Clients::model()->findAll($Criteria);
+		
+foreach($theClients as $client){
+	$selected='';
+	if($client->id==$model->client_id){
+		$selected='selected';
+	}
+	echo "<option value='$client->id' $selected> $client->FirstName</option>";
+}
+?>
+</select>
+
+		
 		<?php echo $form->error($model,'client_id'); ?>
 	</div>
 	

@@ -42,6 +42,15 @@ class UsersController extends Controller
 	 */
 	public function actionCreate()
 	{
+		
+			if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']==3){
+		
+			$this->redirect(array('site/dashboard'));
+		
+		}
+		}
+		
 		$model=new Users;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -100,6 +109,15 @@ $data= CHtml::listData($locations, 'id', 'name');
 	
 	public function actionEdit()
 	{
+		
+			if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']==3){
+		
+			$this->redirect(array('site/dashboard'));
+		
+		}
+		}
+		
 		$id=Yii::app()->user->id;
 		
 		$model=$this->loadModel($id);
@@ -111,7 +129,7 @@ $data= CHtml::listData($locations, 'id', 'name');
 		{
 			$model->attributes=$_POST['Users'];
 			if($model->save())
-				$this->redirect(array('site/dasboard'));
+				$this->redirect(array('site/dashboard'));
 		}
 		
 				$criteria = new CDbCriteria;
@@ -145,6 +163,14 @@ $data= CHtml::listData($locations, 'id', 'name');
 	 */
 	public function actionIndex()
 	{
+		
+		if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']==3){
+		
+			$this->redirect(array('site/dashboard'));
+		
+		}
+		}
 		$model=new Users('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Users']))
@@ -160,6 +186,13 @@ $data= CHtml::listData($locations, 'id', 'name');
 	 */
 	public function actionAdmin()
 	{
+			if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']==3){
+		
+			$this->redirect(array('site/dashboard'));
+		
+		}
+		}
 		$model=new Users('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Users']))
@@ -181,6 +214,14 @@ $data= CHtml::listData($locations, 'id', 'name');
 	 */
 	public function actionTherapists()
 	{
+			if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']==3){
+		
+			$this->redirect(array('site/dashboard'));
+		
+		}
+		}
+		
 		$model=new Users('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Users']))
