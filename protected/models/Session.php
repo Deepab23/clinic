@@ -85,6 +85,14 @@ class Session extends CActiveRecord
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('workout',$this->workout,true);
 		$criteria->compare('createdon',$this->createdon,true);
+		if(isset($_SESSION['user']['Role'])){
+	if($_SESSION['user']['Role']!=1){
+		$of=$_SESSION['user']['Office'];
+		
+		$criteria->join='inner JOIN clients a ON t.client_id = a.id and a.location ='.$of;
+
+       	}
+		}
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
